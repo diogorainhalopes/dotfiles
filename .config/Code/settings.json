@@ -1,0 +1,141 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.stickyScroll.enabled": true,
+    "editor.mouseWheelZoom": true,
+    "editor.rulers": [
+        80,
+        100,
+        120
+    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "window.openFilesInNewWindow": "on",
+    "workbench.colorCustomizations": {
+        "statusBar.debuggingBackground": "#00CC66",
+        "statusBar.debuggingForeground": "#ffffff",
+        "tree.indentGuidesStroke": "#32a852",
+        "tree.inactiveIndentGuidesStroke": "#e0b0e8"
+    },
+    "telemetry.telemetryLevel": "off",
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": false,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.scrollback": 10000,
+    "editor.fontFamily": "RobotoMono Nerd Font",
+    "zenMode.hideLineNumbers": false,
+    "workbench.tree.indent": 10,
+    "workbench.tree.renderIndentGuides": "always",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "redhat.telemetry.enabled": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "http.systemCertificates": false,
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "[json]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "editor.formatOnSave": true
+    },
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.smoothScrolling": true,
+    "workbench.startupEditor": "none",
+    "editor.inlineSuggest.enabled": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDelete": false,
+    "terminal.integrated.automationProfile.osx": {
+        "terminal.integrated.shell.linux": "/usr/bin/tmux",
+        "terminal.integrated.shellArgs.linux": [
+            "-f",
+            "~/.config/tmux/tmux.conf"
+        ]
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false
+    },
+    "quarkus.tools.alwaysShowWelcomePage": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "redhat.vscode-quarkus",
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "editor.formatOnType": true,
+    "java.format.settings.profile": ".vscode/java-formatter.xml",
+    "security.workspace.trust.untrustedFiles": "open",
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform"
+    },
+    "editor.smoothScrolling": true,
+    "editor.minimap.autohide": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.size": "fit",
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "window.zoomLevel": 0,
+    "workbench.sideBar.location": "right",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "html.format.enable": false,
+    "workbench.editor.empty.hint": "hidden",
+    "explorer.compactFolders": false,
+    "files.trimTrailingWhitespace": true,
+    "editor.renderWhitespace": "all",
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "workbench.activityBar.location": "top",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "right"
+    },
+    "notebook.lineNumbers": "on",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "terminal.integrated.fontFamily": "RobotoMono Nerd Font",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "cmake.showOptionsMovedNotification": false,
+    "[xml]": {
+        "editor.defaultFormatter": "Oracle.oracle-java"
+    },
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "workbench.editor.wrapTabs": true,
+}

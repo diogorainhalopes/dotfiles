@@ -1,0 +1,47 @@
+[user]
+    name = Diogo Lopes
+    email = 72354100+diogorainhalopes@users.noreply.github.com
+[core]
+    commentChar = @
+    editor = nano
+[merge]
+    log = 50
+    renameLimit = 99999
+[push]
+    default = upstream
+[pull]
+    rebase = merges
+[filter "locallatin1"]
+    clean = iconv -f \"ISO-8859-1\" -t \"UTF-8\"
+    smudge = iconv -f \"UTF-8\" -t \"ISO-8859-1\"
+[gui]
+    encoding = utf-8
+
+[format]
+    pretty = format:%C(auto,yellow)%h %C(auto,blue)%>(12,trunc)%ar %C(auto,green)%aN %C(auto,reset)%s %C(auto,red)% gD% D
+[diff]
+    compactionHeuristic = true
+
+[color]
+    status = auto
+    branch = auto
+    diff = auto
+
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+
+[color "branch"]
+    current = green reverse
+    local = white
+    remote = white reverse
+
+[color "diff"]
+    meta = yellow
+    frag = blue bold
+    old = red bold
+    new = green bold
+
+[rerere]
+        enabled = false
