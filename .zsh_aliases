@@ -1,7 +1,0 @@
-# Java
-alias javav='sudo update-alternatives --config java'
-
-
-ctail() {
-    tail "$@" | GREP_COLOR='01;31' egrep --color=always 'ERROR|$' | GREP_COLOR='01;35' egrep --color=always 'WARNING|$' | GREP_COLOR='01;33' egrep --color=always 'DEBUG|$' | GREP_COLOR='01;36' egrep --color=always 'INFO|$'
-}

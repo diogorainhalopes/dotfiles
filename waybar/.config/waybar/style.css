@@ -1,0 +1,490 @@
+/*
+ * __        __          _                  ____  _         _
+ * \ \      / /_ _ _   _| |__   __ _ _ __  / ___|| |_ _   _| | ___
+ *  \ \ /\ / / _` | | | | '_ \ / _` | '__| \___ \| __| | | | |/ _ \
+ *   \ V  V / (_| | |_| | |_) | (_| | |     ___) | |_| |_| | |  __/
+ *    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    |____/ \__|\__, |_|\___|
+ *                 |___/                              |___/
+ *
+ * by Stephan Raabe (2023)
+ * -----------------------------------------------------
+*/
+
+/* -----------------------------------------------------
+ * Import Pywal colors
+ * ----------------------------------------------------- */
+/* @import 'style-light.css'; */
+@define-color backgroundlight #FFFFFF;
+@define-color backgrounddark #FFFFFF;
+@define-color workspacesbackground1 #FFFFFF;
+@define-color workspacesbackground2 #CCCCCC;
+@define-color bordercolor #FFFFFF;
+@define-color textcolor1 #000000;
+@define-color textcolor2 #000000;
+@define-color textcolor3 #FFFFFF;
+@define-color iconcolor #FFFFFF;
+
+/* -----------------------------------------------------
+ * General
+ * ----------------------------------------------------- */
+
+* {
+    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    border: none;
+    border-radius: 0px;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 0px solid #ffffff;
+    /* color: #FFFFFF; */
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* -----------------------------------------------------
+ * Workspaces
+ * ----------------------------------------------------- */
+
+#workspaces {
+    margin: 5px 1px 6px 1px;
+    padding: 0px 1px;
+    border-radius: 15px;
+    border: 0px;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 0px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+}
+
+/* -----------------------------------------------------
+ * Tooltips
+ * ----------------------------------------------------- */
+
+tooltip {
+    border-radius: 10px;
+    background-color: @backgroundlight;
+    opacity: 0.8;
+    padding: 20px;
+    margin: 0px;
+}
+
+tooltip label {
+    color: @textcolor2;
+}
+
+/* -----------------------------------------------------
+ * Window
+ * ----------------------------------------------------- */
+
+#window {
+    background: @backgroundlight;
+    margin: 10px 15px 10px 0px;
+    padding: 2px 10px 0px 10px;
+    border-radius: 12px;
+    color: @textcolor2;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+/* -----------------------------------------------------
+ * Taskbar
+ * ----------------------------------------------------- */
+
+#taskbar {
+    background: @backgroundlight;
+    margin: 6px 15px 6px 0px;
+    padding: 0px;
+    border-radius: 15px;
+    font-weight: normal;
+    font-style: normal;
+    border: 3px solid @backgroundlight;
+}
+
+#taskbar button {
+    margin: 0;
+    border-radius: 15px;
+    padding: 0px 5px 0px 5px;
+}
+
+/* -----------------------------------------------------
+ * Modules
+ * ----------------------------------------------------- */
+
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+/* ----------------------------------------------------- *
+* Global Styles
+* ----------------------------------------------------- */
+* {
+    transition: all 0.2s ease;
+}
+
+/* ----------------------------------------------------- *
+* Custom Quicklinks
+* ----------------------------------------------------- */
+#custom-brave,
+#custom-browser,
+#custom-keybindings,
+#custom-outlook,
+#custom-filemanager,
+#custom-teams,
+#custom-chatgpt,
+#custom-calculator,
+#custom-windowsvm,
+#custom-cliphist,
+#custom-wallpaper,
+#custom-settings,
+#custom-wallpaper,
+#custom-system,
+#custom-hyprshade,
+#custom-hypridle,
+#custom-quicklink1,
+#custom-quicklink2,
+#custom-quicklink3,
+#custom-quicklink4,
+#custom-quicklink5,
+#custom-quicklink6,
+#custom-quicklink7,
+#custom-quicklink8,
+#custom-quicklink9,
+#custom-quicklink10,
+#custom-waybarthemes {
+    margin-right: 23px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+/* Hover effects for quicklinks */
+#custom-brave:hover,
+#custom-browser:hover,
+#custom-keybindings:hover,
+#custom-outlook:hover,
+#custom-filemanager:hover,
+#custom-teams:hover,
+#custom-chatgpt:hover,
+#custom-calculator:hover,
+#custom-windowsvm:hover,
+#custom-cliphist:hover,
+#custom-wallpaper:hover,
+#custom-settings:hover,
+#custom-system:hover,
+#custom-hyprshade:hover,
+#custom-hypridle:hover,
+#custom-quicklink1:hover,
+#custom-quicklink2:hover,
+#custom-quicklink3:hover,
+#custom-quicklink4:hover,
+#custom-quicklink5:hover,
+#custom-quicklink6:hover,
+#custom-quicklink7:hover,
+#custom-quicklink8:hover,
+#custom-quicklink9:hover,
+#custom-quicklink10:hover,
+#custom-waybarthemes:hover {
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    font-size: 21px;
+    /* Slightly larger on hover instead of transform */
+}
+
+#custom-hyprshade {
+    margin-right: 12px;
+}
+
+#custom-hypridle {
+    margin-right: 16px;
+}
+
+#custom-hypridle.active {
+    color: #FFFFFF;
+}
+
+#custom-hypridle.notactive {
+    color: #dc2f2f;
+}
+
+#custom-waybarthemes,
+#custom-system {
+    margin-right: 15px;
+}
+
+
+/* ----------------------------------------------------- *
+* Idle Inhibator
+* ----------------------------------------------------- */
+#idle_inhibitor {
+    margin-right: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+#idle_inhibitor.activated {
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #dc2f2f;
+    opacity: 1;
+}
+
+#idle_inhibitor:hover {
+    opacity: 1;
+    font-size: 23px;
+}
+
+/* ----------------------------------------------------- *
+* Custom Modules
+* ----------------------------------------------------- */
+#custom-appmenu {
+    background-color: transparent;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 10px 15px 10px 10px;
+}
+
+#custom-appmenu:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ----------------------------------------------------- *
+* Custom Exit
+* ----------------------------------------------------- */
+#custom-exit {
+    margin: 0px 20px 0px 0px;
+    padding: 0px;
+    font-size: 20px;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+#custom-exit:hover {
+    opacity: 1;
+    color: #ff6b6b;
+    font-size: 22px;
+}
+
+
+
+/* ----------------------------------------------------- *
+* Custom Youtube
+* ----------------------------------------------------- */
+#custom-youtube {
+    background-color: transparent;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 10px 15px 10px 0px;
+}
+
+#custom-youtube:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* ----------------------------------------------------- *
+* Hardware Group
+* ----------------------------------------------------- */
+#disk,
+#memory,
+#cpu {
+    margin-top: 5px;
+    padding: 0px;
+    font-size: 12px;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+#disk:hover,
+#memory:hover,
+#cpu:hover {
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* ----------------------------------------------------- *
+* Clock
+* ----------------------------------------------------- */
+#clock {
+    background-color: transparent;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 10px 15px 10px 0px;
+}
+
+#clock:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ----------------------------------------------------- *
+* Pulseaudio
+* ----------------------------------------------------- */
+#pulseaudio {
+    background-color: transparent;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 10px 15px 10px 0px;
+}
+
+#pulseaudio.muted {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#pulseaudio:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#pulseaudio.muted:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ----------------------------------------------------- *
+* Network
+* ----------------------------------------------------- */
+#network {
+    background-color: transparent;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 10px 15px 10px 0px;
+}
+
+#network.ethernet,
+#network.wifi {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+#network:hover,
+#network.ethernet:hover,
+#network.wifi:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#network.disconnected {
+    background-color: transparent;
+    color: #f53c3c;
+}
+
+#network.disconnected:hover {
+    background-color: rgba(245, 60, 60, 0.2);
+}
+
+/* ----------------------------------------------------- *
+* Battery
+* ----------------------------------------------------- */
+#battery {
+    background-color: transparent;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 2px 15px 0px 10px;
+    margin: 10px 15px 10px 0px;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+#battery:hover,
+#battery.charging:hover,
+#battery.plugged:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes blink {
+    to {
+        background-color: transparent;
+        color: #FFFFFF;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: rgba(245, 60, 60, 0.8);
+    color: #FFFFFF;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* ----------------------------------------------------- *
+* Tray
+* ----------------------------------------------------- */
+#tray {
+    margin: 0px 10px 0px 0px;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+/* ----------------------------------------------------- *
+* Other
+* ----------------------------------------------------- */
+label:focus {
+    background-color: transparent;
+}
+
+#backlight {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+#backlight:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

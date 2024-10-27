@@ -1,0 +1,77 @@
+{
+    "[json]": {
+        "editor.detectIndentation": false,
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml"
+    },
+    "cody.autocomplete.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontFamily": "RobotoMono Nerd Font",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.hover.delay": 500,
+    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.minimap.autohide": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.size": "fit",
+    "editor.mouseWheelZoom": true,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [
+        100
+    ],
+    "editor.scrollbar.verticalScrollbarSize": 4,
+    "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.suggestSelection": "first",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "git.openRepositoryInParentFolders": "always",
+    "http.systemCertificates": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "RobotoMono Nerd Font",
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.smoothScrolling": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.openFilesInNewWindow": "on",
+    "workbench.activityBar.location": "top",
+    "workbench.colorCustomizations": {
+        "statusBar.debuggingBackground": "#00CC66",
+        "statusBar.debuggingForeground": "#ffffff",
+        "tree.inactiveIndentGuidesStroke": "#e0b0e8",
+        "tree.indentGuidesStroke": "#32a852"
+    },
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.wrapTabs": true,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.list.smoothScrolling": true,
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.visible": false,
+    "workbench.tree.indent": 10,
+    "workbench.tree.renderIndentGuides": "always",
+    "zenMode.hideLineNumbers": false,
+    "window.customTitleBarVisibility": "auto"
+}
